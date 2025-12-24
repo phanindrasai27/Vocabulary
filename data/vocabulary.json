@@ -1,0 +1,72 @@
+[
+  {
+    "word": "Serendipity",
+    "meaning": "Finding something good without looking for it.",
+    "sentence": "We found the best pizza place by pure serendipity while lost in the city.",
+    "domain": "General / Life",
+    "used": false
+  },
+  {
+    "word": "Ephemeral",
+    "meaning": "Lasting for a very short time.",
+    "sentence": "Social media fame is often ephemeral, vanishing as quickly as it arrives.",
+    "domain": "Nature / Philosophy",
+    "used": false
+  },
+  {
+    "word": "Sonder",
+    "meaning": "The realization that each passerby has a life as vivid and complex as your own.",
+    "sentence": "Sitting in the airport, he was struck by sonder, wondering where everyone was going.",
+    "domain": "Emotion / Psychology",
+    "used": false
+  },
+  {
+    "word": "Mellifluous",
+    "meaning": "A sound that is sweet and smooth, pleasing to hear.",
+    "sentence": "Her mellifluous voice made even the boring announcements sound like a song.",
+    "domain": "Music / Sound",
+    "used": false
+  },
+  {
+    "word": "Limerence",
+    "meaning": "The state of being infatuated with another person.",
+    "sentence": "It wasn't love, just limerence—an intense obsession that faded after a few months.",
+    "domain": "Psychology",
+    "used": false
+  },
+  {
+    "word": "Petrichor",
+    "meaning": "The pleasantly earthy smell of rain on dry soil.",
+    "sentence": "As the storm broke, the air filled with petrichor, signaling the end of the drought.",
+    "domain": "Nature",
+    "used": false
+  },
+  {
+    "word": "Vellichor",
+    "meaning": "The strange wistfulness of used bookstores.",
+    "sentence": "Walking through the dusty aisles, she felt the vellichor of thousands of old stories waiting to be read.",
+    "domain": "Literature",
+    "used": false
+  },
+  {
+    "word": "Defenestrate",
+    "meaning": "To throw someone out of a window.",
+    "sentence": "Frustrated with the buggy code, he felt a sudden urge to defenestrate his laptop.",
+    "domain": "History / Action",
+    "used": false
+  },
+  {
+    "word": "Agley",
+    "meaning": "To go wrong; askew.",
+    "sentence": "Despite our best planning, the project went agley almost immediately.",
+    "domain": "General",
+    "used": false
+  },
+  {
+    "word": "Ineffable",
+    "meaning": "Too great or extreme to be expressed or described in words.",
+    "sentence": "The joy of holding his newborn daughter was ineffable.",
+    "domain": "Emotion",
+    "used": false
+  }
+]
