@@ -36,7 +36,7 @@ def main():
         word_data = cm.get_next_word()
         
         if not word_data:
-            logger.error("Failed to generate word data. Check Gemini API key and logs.")
+            logger.error("Failed to generate word data. Check Groq API key and logs.")
             # Exit with code 1 so GitHub Actions shows a Failure Red X
             sys.exit(1)
 

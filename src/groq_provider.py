@@ -56,9 +56,9 @@ class GroqProvider:
             completion = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {{"role": "user", "content": prompt}}
+                    {"role": "user", "content": prompt}
                 ],
-                response_format={{"type": "json_object"}}
+                response_format={"type": "json_object"}
             )
             
             content = completion.choices[0].message.content
