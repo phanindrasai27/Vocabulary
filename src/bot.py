@@ -36,8 +36,9 @@ def main():
         word_data = cm.get_next_word()
         
         if not word_data:
-            logger.warning("No unused words available in vocabulary!")
-            sys.exit(0)
+            logger.error("Failed to generate word data. Check Gemini API key and logs.")
+            # Exit with code 1 so GitHub Actions shows a Failure Red X
+            sys.exit(1)
 
         post_content = cm.generate_post_text(word_data)
         

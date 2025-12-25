@@ -11,10 +11,11 @@ class GeminiProvider:
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY")
         if self.api_key:
+            logger.info(f"Gemini API Key found: {self.api_key[:4]}...{self.api_key[-4:]}")
             genai.configure(api_key=self.api_key)
             self.model = genai.GenerativeModel("gemini-2.0-flash-exp")
         else:
-            logger.warning("GEMINI_API_KEY not found. GeminiProvider will fail unless mocked.")
+            logger.error("❌ CRITICAL: GEMINI_API_KEY environment variable is missing!")
             self.model = None
 
     def generate_word(self, history_list):
