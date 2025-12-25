@@ -1,10 +1,10 @@
-name: Debug Gemini API
+name: Debug Groq API
 
 on:
   workflow_dispatch:
 
 jobs:
-  debug-gemini:
+  debug-groq:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -17,10 +17,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-generativeai
+          pip install groq
 
       - name: Run Debug Script
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          python src/debug_gemini.py
+          python src/debug_groq.py

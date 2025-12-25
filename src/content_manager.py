@@ -1,14 +1,14 @@
 import logging
 import os
 import json
-from gemini_provider import GeminiProvider
+from groq_provider import GroqProvider
 
 # Configure logger
 logger = logging.getLogger(__name__)
 
 class ContentManager:
     def __init__(self, history_path="data/history.json"):
-        self.gemini_provider = GeminiProvider()
+        self.groq_provider = GroqProvider()
         self.history_path = history_path
         self.history = self.load_history()
 
@@ -34,13 +34,13 @@ class ContentManager:
 
     def get_next_word(self):
         """
-        Generates a word using Gemini, avoiding history.
+        Generates a word using Groq, avoiding history.
         """
-        word_data = self.gemini_provider.generate_word(self.history)
+        word_data = self.groq_provider.generate_word(self.history)
         if word_data:
             return word_data
         
-        logger.error("Gemini failed to generate a word.")
+        logger.error("Groq failed to generate a word.")
         return None
 
     def mark_as_used(self, word_text):
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     # Test
     logging.basicConfig(level=logging.INFO)
     cm = ContentManager()
-    print("Generating word with Gemini...")
+    print("Generating word with Groq...")
     word = cm.get_next_word()
     if word:
         print(cm.generate_post_text(word))
