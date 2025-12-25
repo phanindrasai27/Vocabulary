@@ -41,7 +41,11 @@ class XClient:
 
         try:
             response = self.client.create_tweet(text=text, in_reply_to_tweet_id=reply_to_id)
-            logger.info(f"Tweet posted successfully. ID: {response.data['id']}")
+            tweet_id = response.data['id']
+            # Construct URL for validation
+            # Note: We don't know the username dynamically without an extra API call, 
+            # but 'x.com/i/web/status/<id>' works for redirection.
+            logger.info(f"Tweet posted successfully! 🚀\nTweet ID: {tweet_id}\nURL: https://x.com/i/web/status/{tweet_id}")
             return True
         except Exception as e:
             logger.error(f"Failed to post tweet: {e}")

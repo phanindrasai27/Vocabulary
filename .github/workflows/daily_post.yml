@@ -2,8 +2,8 @@ name: Daily Vocabulary Post
 
 on:
   schedule:
-    # Runs at the start of every hour
-    - cron: '0 * * * *'
+    # Runs at xx:30 UTC, which is xx:00 IST (+5:30)
+    - cron: '30 * * * *'
   workflow_dispatch:
 
 jobs:
